@@ -148,7 +148,7 @@ theme_scatter<-function(base_family = "") {
               ) %+replace%
                 theme(
                   panel.background = element_rect(fill = NA),
-                  plot.title = element_text(vjust = 3),
+                  plot.title = element_text(vjust = 1.3),
                   panel.grid.minor = element_blank(),
                   panel.grid.major = element_blank(),
                   axis.title.y = element_text(vjust = 1.3, size = 8.3),
