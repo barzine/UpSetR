@@ -130,7 +130,7 @@ theme_histo<-function(base_family = "") {
                 base_family = base_family
               ) %+replace%
                 theme(
-                  panel.background = element_rect(fill = "white"),
+                  panel.background = element_rect(fill = NA),
                   plot.title = element_text(vjust = 1.5),
                   panel.border = element_blank(),
                   panel.grid.minor = element_blank(),
@@ -147,8 +147,8 @@ theme_scatter<-function(base_family = "") {
                 base_family = base_family
               ) %+replace%
                 theme(
-                  panel.background = element_rect(fill = "white"),
-                  plot.title = element_text(vjust = 1.3),
+                  panel.background = element_rect(fill = NA),
+                  plot.title = element_text(vjust = 3),
                   panel.grid.minor = element_blank(),
                   panel.grid.major = element_blank(),
                   axis.title.y = element_text(vjust = 1.3, size = 8.3),
