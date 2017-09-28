@@ -68,7 +68,7 @@ Make_size_plot <- function(Set_size_data, sbar_color, ratios, ylabel, scale_sets
                 + scale_x_continuous(limits = c(0.5, (nrow(Set_size_data)+0.5)),
                                      breaks = c(0, max(Set_size_data)),
                                      expand = c(0,0))
-                + theme(base_family = 'Linux Libertine Mono',panel.background = element_rect(fill = "white"),
+                + theme(text=element_text('Linux Libertine Mono'),panel.background = element_rect(fill = "white"),
                         plot.margin=unit(c(-0.11,-1.3,0.5,0.5), "lines"),
                         axis.title.x = element_text(size = 8.3*x_axis_title_scale),
                         axis.text.x = element_text(size = 7*x_axis_tick_label_scale, angle = set_size_angle,
