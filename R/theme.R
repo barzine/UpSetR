@@ -23,8 +23,6 @@ theme_Main_bar_plot<-function(base_family = "") {
                   panel.background = element_rect(fill = "white"),
                   plot.margin = unit(c(0.5,0.5,bottom_margin,0.5), "lines"), 
                   panel.border = element_blank(),
-                  axis.title.y = element_text(vjust = -0.8, size = 8.3*y_axis_title_scale), 
-                  axis.text.y = element_text(vjust=0.3,size=7*y_axis_tick_label_scale),
                   complete = TRUE
                 )
 }
