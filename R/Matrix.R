@@ -85,15 +85,7 @@ Make_matrix_plot <- function(Mat_data,Set_size_data, Main_bar_data, point_size, 
   }
   
   Matrix_plot <- (ggplot() 
-                  + theme(panel.background = element_rect(fill = "white"),
-                          plot.margin=unit(c(-0.2,0.5,0.5,0.5), "lines"),
-                          axis.text.x = element_blank(),
-                          axis.ticks.x = element_blank(),
-                          axis.ticks.y = element_blank(),
-                          axis.text.y = element_text(colour = "gray0", 
-                                                     size = 7*name_size_scale, hjust = 0.4),
-                          panel.grid.major = element_blank(), 
-                          panel.grid.minor = element_blank())
+                  + theme_Matrix_plot()
                   + xlab(NULL) + ylab("   ")
                   + scale_y_continuous(breaks = c(1:nrow(Set_size_data)),
                                        limits = c(0.5,(nrow(Set_size_data) +0.5)),
