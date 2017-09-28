@@ -10,5 +10,5 @@ histogram <- function(mydata, x){
                + scale_fill_identity()
                + geom_histogram(binwidth = 1)
                + ylab("Frequency")
-               + theme_histo()
+               + theme_histo())
 }
