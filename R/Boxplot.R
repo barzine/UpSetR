@@ -43,7 +43,7 @@ BoxPlotsPlot <- function(bdat, att, att_color){
   boxplots <- ggplotGrob(ggplot()
                          + theme_bw() +ylab(yaxis)
                          + scale_x_discrete(limits = plot_lims, expand = c(0,0))
-                         + theme(base_family = 'Linux Libertine Mono',
+                         + theme(text=element_text('Linux Libertine Mono'),
                                  plot.margin = unit(c(-0.7,0,0,0), "cm"),
                                  axis.title.y = element_text(vjust = -0.8),
                                  axis.ticks.x = element_blank(),
