@@ -138,6 +138,32 @@ theme_metadataText<-function(base_size = 11, base_family = "",
                 )
   }
 
+theme_sizeBar<-<-function(base_size = 11, base_family = "",
+                     base_line_size = base_size / 22,
+                     base_rect_size = base_size / 22) {
+     theme_bw(
+                base_size = base_size,
+                base_family = base_family,
+                base_line_size = base_line_size,
+                base_rect_size = base_rect_size
+              ) %+replace%
+                theme(
+                  panel.background = element_rect(fill = "white"),
+                  plot.margin=unit(c(-0.11,-1.3,0.5,0.5), "lines"),
+                  axis.title.x = element_text(size = 8.3*x_axis_title_scale),
+                  axis.text.x = element_text(size = 7*x_axis_tick_label_scale, 
+                                             angle = set_size_angle,
+                                             vjust = 1, hjust = 0.5),
+                  axis.line = element_line(colour = "gray0"),
+                  axis.line.y = element_blank(),
+                  axis.line.x = element_line(colour = "gray0", size = 0.3),
+                  axis.text.y = element_blank(),
+                  axis.ticks.y = element_blank(),
+                  panel.grid.minor = element_blank(),
+                  panel.grid.major = element_blank()
+                  )
+  }
+
 
 
 
