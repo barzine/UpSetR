@@ -77,6 +77,8 @@ metadataHeat <- function(metadata, y_data, plot_type, colors){
   plot <- (ggplot(data=metadata, aes_string(x="sets", y = 1, fill = y_data))
            + scale_x_continuous(expand = c(c(0,0), c(0,0)))
            + theme_metadataHeat()
+           + theme(plot.title = element_text(margin = margin(b=titleAdjustment),
+                                             size = 9, hjust = 0.5))
            + ylab(NULL)
            + xlab(NULL)
            + ggtitle(y_data)
@@ -148,6 +150,8 @@ metadataText <- function(metadata, y_data, colors, alignment){
            + scale_x_continuous(limits = c(0.5, (nrow(metadata)+0.5)),
                                 expand = c(0,0))
            + theme_metadataText()
+           + theme( plot.title = element_text(margin = margin(b=titleAdjustment),
+                                             size = 9, hjust = 0.5))
            + xlab(NULL)
            + ylab(NULL)
            + coord_flip()
