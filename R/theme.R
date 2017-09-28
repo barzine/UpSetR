@@ -1,11 +1,6 @@
-theme_boxplots<- function(base_size = 11, base_family = "",
-                     base_line_size = base_size / 22,
-                     base_rect_size = base_size / 22) {
+theme_boxplots<- function(base_family = "") {
      theme_bw(
-                base_size = base_size,
-                base_family = base_family,
-                base_line_size = base_line_size,
-                base_rect_size = base_rect_size
+              base_family = base_family
               ) %+replace%
                 theme(
                       plot.margin = unit(c(-0.7,0,0,0), "cm"),
@@ -20,14 +15,9 @@ theme_boxplots<- function(base_size = 11, base_family = "",
                       )
 }
 
-theme_Main_bar_plot<-function(base_size = 11, base_family = "",
-                     base_line_size = base_size / 22,
-                     base_rect_size = base_size / 22) {
+theme_Main_bar_plot<-function(base_family = "") {
      theme_bw(
-                base_size = base_size,
-                base_family = base_family,
-                base_line_size = base_line_size,
-                base_rect_size = base_rect_size
+                base_family = base_family
               ) %+replace%
                 theme(
                   panel.background = element_rect(fill = "white"),
@@ -40,14 +30,9 @@ theme_Main_bar_plot<-function(base_size = 11, base_family = "",
 }
 
 
-theme_Matrix_plot<-function(base_size = 11, base_family = "",
-                     base_line_size = base_size / 22,
-                     base_rect_size = base_size / 22) {
+theme_Matrix_plot<-function( base_family = "") {
      theme_bw(
-                base_size = base_size,
-                base_family = base_family,
-                base_line_size = base_line_size,
-                base_rect_size = base_rect_size
+                base_family = base_family
               ) %+replace%
                 theme(
                   panel.background = element_rect(fill = "white"),
@@ -63,14 +48,9 @@ theme_Matrix_plot<-function(base_size = 11, base_family = "",
 }
 
 
-theme_metadataHist<-function(base_size = 11, base_family = "",
-                     base_line_size = base_size / 22,
-                     base_rect_size = base_size / 22) {
+theme_metadataHist<-function(base_family = "") {
      theme_bw(
-                base_size = base_size,
-                base_family = base_family,
-                base_line_size = base_line_size,
-                base_rect_size = base_rect_size
+                base_family = base_family
               ) %+replace%
                 theme(
                    panel.background = element_rect("white"),
@@ -88,14 +68,9 @@ theme_metadataHist<-function(base_size = 11, base_family = "",
                 )
 }
 
-theme_metadataHeat<-function(base_size = 11, base_family = "",
-                     base_line_size = base_size / 22,
-                     base_rect_size = base_size / 22) {
+theme_metadataHeat<-function(base_family = "") {
      theme_bw(
-                base_size = base_size,
-                base_family = base_family,
-                base_line_size = base_line_size,
-                base_rect_size = base_rect_size
+                base_family = base_family
               ) %+replace%
                 theme(
                    panel.background = element_rect("white"),
@@ -116,14 +91,9 @@ theme_metadataHeat<-function(base_size = 11, base_family = "",
                   )
 }
 
-theme_metadataText<-function(base_size = 11, base_family = "",
-                     base_line_size = base_size / 22,
-                     base_rect_size = base_size / 22) {
+theme_metadataText<-function(base_family = "") {
      theme_bw(
-                base_size = base_size,
-                base_family = base_family,
-                base_line_size = base_line_size,
-                base_rect_size = base_rect_size
+                base_family = base_family
               ) %+replace%
                 theme(
                    panel.background = element_rect("white"),
@@ -144,14 +114,9 @@ theme_metadataText<-function(base_size = 11, base_family = "",
                 )
   }
 
-theme_sizeBar<-function(base_size = 11, base_family = "",
-                     base_line_size = base_size / 22,
-                     base_rect_size = base_size / 22) {
+theme_sizeBar<-function(base_family = "") {
      theme_bw(
-                base_size = base_size,
-                base_family = base_family,
-                base_line_size = base_line_size,
-                base_rect_size = base_rect_size
+                base_family = base_family
               ) %+replace%
                 theme(
                   panel.background = element_rect(fill = "white"),
@@ -172,14 +137,9 @@ theme_sizeBar<-function(base_size = 11, base_family = "",
   }
 
 
-theme_histo<-function(base_size = 11, base_family = "",
-                     base_line_size = base_size / 22,
-                     base_rect_size = base_size / 22) {
+theme_histo<-function(base_family = "") {
      theme_bw(
-                base_size = base_size,
-                base_family = base_family,
-                base_line_size = base_line_size,
-                base_rect_size = base_rect_size
+                base_family = base_family
               ) %+replace%
                 theme(
                   panel.background = element_rect(fill = "white"),
@@ -194,14 +154,9 @@ theme_histo<-function(base_size = 11, base_family = "",
                 )
   }
 
-theme_scatter<-function(base_size = 11, base_family = "",
-                     base_line_size = base_size / 22,
-                     base_rect_size = base_size / 22) {
+theme_scatter<-function(base_family = "") {
      theme_bw(
-                base_size = base_size,
-                base_family = base_family,
-                base_line_size = base_line_size,
-                base_rect_size = base_rect_size
+                base_family = base_family
               ) %+replace%
                 theme(
                   panel.background = element_rect(fill = "white"),
