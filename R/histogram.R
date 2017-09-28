@@ -10,7 +10,7 @@ histogram <- function(mydata, x){
                + scale_fill_identity()
                + geom_histogram(binwidth = 1)
                + ylab("Frequency")
-               + theme(base_family = 'Linux Libertine Mono',
+               + theme(text=element_text('Linux Libertine Mono'),
                        panel.background = element_rect(fill = "white"),
                        plot.title = element_text(vjust = 1.5),
                        panel.border = element_blank(),
