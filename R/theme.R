@@ -58,3 +58,87 @@ theme_Matrix_plot<-function(base_size = 11, base_family = "",
                   panel.grid.minor = element_blank()
                 )
 }
+
+
+theme_metadataHist<-function(base_size = 11, base_family = "",
+                     base_line_size = base_size / 22,
+                     base_rect_size = base_size / 22) {
+     theme_bw(
+                base_size = base_size,
+                base_family = base_family,
+                base_line_size = base_line_size,
+                base_rect_size = base_rect_size
+              ) %+replace%
+                theme(
+                   panel.background = element_rect("white"),
+                   plot.margin=unit(c(0,0,0,0), "lines"),
+                   axis.title.x = element_text(size = 8.3),
+                   axis.text.x = element_text(size = 7),
+                   axis.line = element_line(colour = "gray0"),
+                   axis.line.y = element_blank(),
+                   axis.line.x = element_line(colour = "gray0", size = 0.3),
+                   axis.text.y = element_blank(),
+                   axis.ticks.y = element_blank(),
+                   panel.grid.minor = element_blank(),
+                   panel.grid.major = element_blank()
+                )
+}
+
+theme_metadataHeat<-function(base_size = 11, base_family = "",
+                     base_line_size = base_size / 22,
+                     base_rect_size = base_size / 22) {
+     theme_bw(
+                base_size = base_size,
+                base_family = base_family,
+                base_line_size = base_line_size,
+                base_rect_size = base_rect_size
+              ) %+replace%
+                theme(
+                   panel.background = element_rect("white"),
+                   plot.title = element_text(margin = margin(b=titleAdjustment),
+                                             size = 9, hjust = 0.5),
+                   plot.margin=unit(c(0,0,0,0), "lines"),
+                   axis.title.x = element_text(size = 8.3),
+                   legend.position = "none",
+                   axis.line = element_blank(),
+                   axis.line.y = element_blank(),
+                   axis.line.x = element_blank(),
+                   axis.text.y = element_blank(),
+                   axis.ticks.y = element_blank(),
+                   axis.title.y = element_blank(),
+                   axis.text.x = element_blank(),
+                   axis.ticks.x = element_blank()
+                  )
+}
+
+theme_metadataText<-function(base_size = 11, base_family = "",
+                     base_line_size = base_size / 22,
+                     base_rect_size = base_size / 22) {
+     theme_bw(
+                base_size = base_size,
+                base_family = base_family,
+                base_line_size = base_line_size,
+                base_rect_size = base_rect_size
+              ) %+replace%
+                theme(
+                   panel.background = element_rect("white"),
+                   plot.title = element_text(margin = margin(b=titleAdjustment),
+                                             size = 9, hjust = 0.5),
+                   plot.margin=unit(c(0,0,0,0), "lines"),
+                   axis.title.x = element_text(size = 7),
+                   legend.position = "none",
+                   axis.line = element_blank(),
+                   axis.line.y = element_blank(),
+                   axis.line.x = element_blank(),
+                   axis.text.y = element_blank(),
+                   axis.ticks.y = element_blank(),
+                   axis.title.y = element_blank(),
+                   axis.text.x = element_blank(),
+                   axis.ticks.x = element_blank()
+                )
+  }
+
+
+
+
+
