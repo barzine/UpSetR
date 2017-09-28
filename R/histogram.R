@@ -10,12 +10,5 @@ histogram <- function(mydata, x){
                + scale_fill_identity()
                + geom_histogram(binwidth = 1)
                + ylab("Frequency")
-               + theme(panel.background = element_rect(fill = "white"),
-                       plot.title = element_text(vjust = 1.5),
-                       panel.border = element_blank(),
-                       panel.grid.minor = element_blank(),
-                       panel.grid.major = element_blank(),
-                       axis.title.y = element_text(vjust = 1.3, size = 8.3),
-                       axis.title.x = element_text(size = 8.3),
-                       plot.margin=unit(c(0.5,0,0,1), "cm")))
+               + theme_histo()
 }
