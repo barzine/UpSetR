@@ -149,9 +149,10 @@ metadataText <- function(metadata, y_data, colors, alignment){
   plot <- (ggplot(data=metadata, aes_string(x="x", y=1, label = y_data, colour = y_data, size =10))
            + scale_x_continuous(limits = c(0.5, (nrow(metadata)+0.5)),
                                 expand = c(0,0))
-           + theme_metadataText()
-           + theme( plot.title = element_text(margin = margin(b=titleAdjustment),
+           + theme(panel.background = element_rect("white"),
+                   plot.title = element_text(margin = margin(b=titleAdjustment),
                                              size = 9, hjust = 0.5))
+           + theme_metadataText()
            + xlab(NULL)
            + ylab(NULL)
            + coord_flip()
