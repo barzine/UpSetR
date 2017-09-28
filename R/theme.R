@@ -111,7 +111,7 @@ theme_sizeBar<-function(base_family = "") {
                 base_family = base_family
               ) %+replace%
                 theme(
-                  panel.background = element_rect(fill = "white"),
+                  panel.background = element_rect(fill = NA),
                   plot.margin=unit(c(-0.11,-1.3,0.5,0.5), "lines"),
                   axis.line = element_line(colour = "gray0"),
                   axis.line.y = element_blank(),
