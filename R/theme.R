@@ -1,5 +1,5 @@
 theme_boxplots<- function(base_family = "") {
-     theme_bw(
+     theme_minimal(
               base_family = base_family
               ) %+replace%
                 theme(
@@ -16,7 +16,7 @@ theme_boxplots<- function(base_family = "") {
 }
 
 theme_Main_bar_plot<-function(base_family = "") {
-     theme_bw(
+     theme_minimal(
                 base_family = base_family
               ) %+replace%
                 theme(
@@ -28,7 +28,7 @@ theme_Main_bar_plot<-function(base_family = "") {
 
 
 theme_Matrix_plot<-function( base_family = "") {
-     theme_bw(
+     theme_minimal(
                 base_family = base_family
               ) %+replace%
                 theme(
@@ -45,7 +45,7 @@ theme_Matrix_plot<-function( base_family = "") {
 
 
 theme_metadataHist<-function(base_family = "") {
-     theme_bw(
+     theme_minimal(
                 base_family = base_family
               ) %+replace%
                 theme(
@@ -65,7 +65,7 @@ theme_metadataHist<-function(base_family = "") {
 }
 
 theme_metadataHeat<-function(base_family = "") {
-     theme_bw(
+     theme_minimal(
                 base_family = base_family
               ) %+replace%
                 theme(
@@ -107,7 +107,7 @@ theme_metadataText<-function(base_family = "") {
   }
 
 theme_sizeBar<-function(base_family = "") {
-     theme_bw(
+     theme_minimal(
                 base_family = base_family
               ) %+replace%
                 theme(
@@ -126,7 +126,7 @@ theme_sizeBar<-function(base_family = "") {
 
 
 theme_histo<-function(base_family = "") {
-     theme_bw(
+     theme_minimal(
                 base_family = base_family
               ) %+replace%
                 theme(
@@ -143,7 +143,7 @@ theme_histo<-function(base_family = "") {
   }
 
 theme_scatter<-function(base_family = "") {
-     theme_bw(
+     theme_minimal(
                 base_family = base_family
               ) %+replace%
                 theme(
