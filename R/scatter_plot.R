@@ -9,7 +9,8 @@
 scatter_plot <- function(mydata, x, y){
   att_plot <- (ggplot(data = mydata, aes_string(x = x, y = y, colour = "color")) 
                + geom_point() + scale_color_identity()
-               + theme(panel.background = element_rect(fill = "white"),
+               + theme(base_family = 'Linux Libertine Mono',
+                       panel.background = element_rect(fill = "white"),
                        plot.title = element_text(vjust = 1.3),
                        panel.grid.minor = element_blank(),
                        panel.grid.major = element_blank(),
