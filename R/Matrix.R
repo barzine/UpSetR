@@ -86,7 +86,7 @@ Make_matrix_plot <- function(Mat_data,Set_size_data, Main_bar_data, point_size, 
   
   Matrix_plot <- (ggplot() 
                   + theme_Matrix_plot()
-                  + theme(axis.text.y = element_text(colour = "gray0", size = 7*name_size_scale, hjust = 0.4)
+                  + theme(axis.text.y = element_text(colour = "gray0", size = 7*name_size_scale, hjust = 0.4),
                           panel.grid.major = element_blank(), 
                           panel.grid.minor = element_blank())
                   + xlab(NULL) + ylab("   ")
