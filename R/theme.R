@@ -21,7 +21,6 @@ theme_Main_bar_plot<-function(base_family = "") {
               ) %+replace%
                 theme(
                   panel.background = element_rect(fill = "white"),
-                  plot.margin = unit(c(0.5,0.5,bottom_margin,0.5), "lines"), 
                   panel.border = element_blank(),
                   complete = TRUE
                 )
