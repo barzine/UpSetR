@@ -36,3 +36,24 @@ theme_Main_bar_plot<-function(base_size = 11, base_family = "",
                   axis.text.y = element_text(vjust=0.3,size=7*y_axis_tick_label_scale)
                 )
 }
+
+
+theme_Matrix_plot<-function(base_size = 11, base_family = "",
+                     base_line_size = base_size / 22,
+                     base_rect_size = base_size / 22) {
+     theme_bw(
+                base_size = base_size,
+                base_family = base_family,
+                base_line_size = base_line_size,
+                base_rect_size = base_rect_size
+              ) %+replace%
+                theme(
+                  panel.background = element_rect(fill = "white"),
+                  plot.margin=unit(c(-0.2,0.5,0.5,0.5), "lines"),
+                  axis.text.x = element_blank(),
+                  axis.ticks.x = element_blank(),
+                  axis.ticks.y = element_blank(),
+                  axis.text.y = element_text(colour = "gray0", size = 7*name_size_scale, hjust = 0.4),
+                  panel.grid.major = element_blank(), 
+                  panel.grid.minor = element_blank()
+                )
