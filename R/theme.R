@@ -57,3 +57,4 @@ theme_Matrix_plot<-function(base_size = 11, base_family = "",
                   panel.grid.major = element_blank(), 
                   panel.grid.minor = element_blank()
                 )
+}
