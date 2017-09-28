@@ -17,3 +17,22 @@ theme_boxplots<- function(base_size = 11, base_family = "",
                       panel.grid.major = element_blank(),
                       axis.title.x = element_blank()
                       )
+}
+
+theme_Main_bar_plot()<-function(base_size = 11, base_family = "",
+                     base_line_size = base_size / 22,
+                     base_rect_size = base_size / 22) {
+     theme_bw(
+                base_size = base_size,
+                base_family = base_family,
+                base_line_size = base_line_size,
+                base_rect_size = base_rect_size
+              ) %+replace%
+                theme(
+                  panel.background = element_rect(fill = "white"),
+                  plot.margin = unit(c(0.5,0.5,bottom_margin,0.5), "lines"), 
+                  panel.border = element_blank(),
+                  axis.title.y = element_text(vjust = -0.8, size = 8.3*y_axis_title_scale), 
+                  axis.text.y = element_text(vjust=0.3,size=7*y_axis_tick_label_scale)
+                )
+}
