@@ -9,11 +9,5 @@
 scatter_plot <- function(mydata, x, y){
   att_plot <- (ggplot(data = mydata, aes_string(x = x, y = y, colour = "color")) 
                + geom_point() + scale_color_identity()
-               + theme(panel.background = element_rect(fill = "white"),
-                       plot.title = element_text(vjust = 1.3),
-                       panel.grid.minor = element_blank(),
-                       panel.grid.major = element_blank(),
-                       axis.title.y = element_text(vjust = 1.3, size = 8.3),
-                       axis.title.x = element_text(size = 8.3),
-                       plot.margin=unit(c(0.5,0,0,1), "cm")))
+               + theme_scatter())
 }
