@@ -37,7 +37,6 @@ theme_Matrix_plot<-function( base_family = "") {
                   axis.text.x = element_blank(),
                   axis.ticks.x = element_blank(),
                   axis.ticks.y = element_blank(),
-                  axis.text.y = element_text(colour = "gray0", size = 7*name_size_scale, hjust = 0.4),
                   panel.grid.major = element_blank(), 
                   panel.grid.minor = element_blank(),
                   complete = TRUE
@@ -71,8 +70,6 @@ theme_metadataHeat<-function(base_family = "") {
               ) %+replace%
                 theme(
                    panel.background = element_rect("white"),
-                   plot.title = element_text(margin = margin(b=titleAdjustment),
-                                             size = 9, hjust = 0.5),
                    plot.margin=unit(c(0,0,0,0), "lines"),
                    axis.title.x = element_text(size = 8.3),
                    legend.position = "none",
@@ -94,8 +91,6 @@ theme_metadataText<-function(base_family = "") {
               ) %+replace%
                 theme(
                    panel.background = element_rect("white"),
-                   plot.title = element_text(margin = margin(b=titleAdjustment),
-                                             size = 9, hjust = 0.5),
                    plot.margin=unit(c(0,0,0,0), "lines"),
                    axis.title.x = element_text(size = 7),
                    legend.position = "none",
@@ -118,10 +113,6 @@ theme_sizeBar<-function(base_family = "") {
                 theme(
                   panel.background = element_rect(fill = "white"),
                   plot.margin=unit(c(-0.11,-1.3,0.5,0.5), "lines"),
-                  axis.title.x = element_text(size = 8.3*x_axis_title_scale),
-                  axis.text.x = element_text(size = 7*x_axis_tick_label_scale, 
-                                             angle = set_size_angle,
-                                             vjust = 1, hjust = 0.5),
                   axis.line = element_line(colour = "gray0"),
                   axis.line.y = element_blank(),
                   axis.line.x = element_line(colour = "gray0", size = 0.3),
