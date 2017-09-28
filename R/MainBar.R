@@ -125,10 +125,9 @@ Make_main_bar <- function(Main_bar_data, Q, show_num, ratios, customQ, number_an
                     + scale_x_continuous(limits = c(0,(nrow(Main_bar_data)+1 )), expand = c(0,0),
                                          breaks = NULL)
                     + xlab(NULL) + ylab(ylabel) +labs(title = NULL)
-                    + theme(panel.background = element_rect(fill = "white"),
-                            plot.margin = unit(c(0.5,0.5,bottom_margin,0.5), "lines"), panel.border = element_blank(),
-                            axis.title.y = element_text(vjust = -0.8, size = 8.3*y_axis_title_scale), axis.text.y = element_text(vjust=0.3,
-                                                                                                            size=7*y_axis_tick_label_scale)))
+                    + theme_Main_bar_plot())
+  
+  
   if((show_num == "yes") || (show_num == "Yes")){
     Main_bar_plot <- (Main_bar_plot + geom_text(aes_string(label = "freq"), size = 2.2*intersection_size_number_scale, vjust = -1,
                                                 angle = number_angles, colour = Main_bar_data$color))
