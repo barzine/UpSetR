@@ -69,6 +69,11 @@ Make_size_plot <- function(Set_size_data, sbar_color, ratios, ylabel, scale_sets
                                      breaks = c(0, max(Set_size_data)),
                                      expand = c(0,0))
                 + theme_sizeBar()
+                + theme(
+                  axis.title.x = element_text(size = 8.3*x_axis_title_scale),
+                  axis.text.x = element_text(size = 7*x_axis_tick_label_scale, 
+                                             angle = set_size_angle,
+                                             vjust = 1, hjust = 0.5))
                 + xlab(NULL) + ylab(ylabel)
                 + coord_flip())
   
