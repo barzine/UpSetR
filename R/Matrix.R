@@ -38,7 +38,7 @@ Create_layout <- function(setup, mat_color, mat_col, matrix_dot_alpha){
       Matrix_layout$Intersection[i] <- paste(Matrix_layout$x[i], "yes", sep ="")
     }
     else{
-
+      
       Matrix_layout$color[i] <- "gray83"
       Matrix_layout$alpha[i] <- matrix_dot_alpha
       Matrix_layout$Intersection[i] <- paste(i, "No", sep = "")
@@ -83,16 +83,11 @@ Make_matrix_plot <- function(Mat_data,Set_size_data, Main_bar_data, point_size, 
   if(length(text_scale) > 1 && length(text_scale) <= 6){
     name_size_scale <- text_scale[5]
   }
-
-  Matrix_plot <- (ggplot()
-                  + theme(panel.background = element_rect(fill = "white"),
-                          plot.margin=unit(c(-0.2,0.5,0.5,0.5), "lines"),
-                          axis.text.x = element_blank(),
-                          axis.ticks.x = element_blank(),
-                          axis.ticks.y = element_blank(),
-                          axis.text.y = element_text(colour = "gray0",
-                                                     size = 7*name_size_scale, hjust = 0.4),
-                          panel.grid.major = element_blank(),
+  
+  Matrix_plot <- (ggplot() 
+                  + theme_Matrix_plot()
+                  + theme(axis.text.y = element_text(colour = "gray0", size = 7*name_size_scale, hjust = 0.4),
+                          panel.grid.major = element_blank(), 
                           panel.grid.minor = element_blank())
                   + xlab(NULL) + ylab("   ")
                   + scale_y_continuous(breaks = c(1:nrow(Set_size_data)),

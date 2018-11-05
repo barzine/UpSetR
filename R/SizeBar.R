@@ -32,8 +32,8 @@ log2_reverse_trans <- function(){
 }
 
 ## Generate set size plot
-Make_size_plot <- function(Set_size_data, sbar_color, ratios, ylabel, scale_sets, text_scale, set_size_angle, set_size.show, set_size.scale_max,
-                           set_size.number_size){
+Make_size_plot <- function(Set_size_data, sbar_color, ratios, ylabel, scale_sets, text_scale, 
+						   set_size_angle, set_size.show, set_size.scale_max, set_size.number_size){
 #   if(ratios[1] < 0.4){
 #     m <- (-0.05)
 #   }
@@ -75,18 +75,12 @@ Make_size_plot <- function(Set_size_data, sbar_color, ratios, ylabel, scale_sets
                 + scale_x_continuous(limits = c(0.5, (nrow(Set_size_data) + 0.5)),
                                      breaks = c(0, max(Set_size_data)),
                                      expand = c(0,0))
-                + theme(panel.background = element_rect(fill = "white"),
-                        plot.margin=unit(c(-0.11,-1.3,0.5,0.5), "lines"),
-                        axis.title.x = element_text(size = 8.3*x_axis_title_scale),
-                        axis.text.x = element_text(size = 7*x_axis_tick_label_scale,
-                                                   vjust = 1, hjust = 0.5),
-                        axis.line = element_line(colour = "gray0"),
-                        axis.line.y = element_blank(),
-                        axis.line.x = element_line(colour = "gray0", size = 0.3),
-                        axis.text.y = element_blank(),
-                        axis.ticks.y = element_blank(),
-                        panel.grid.minor = element_blank(),
-                        panel.grid.major = element_blank())
+                + theme_sizeBar()
+                + theme(
+                  axis.title.x = element_text(size = 8.3*x_axis_title_scale),
+                  axis.text.x = element_text(size = 7*x_axis_tick_label_scale, 
+                                             angle = set_size_angle,
+                                             vjust = 1, hjust = 0.5))
                 + xlab(NULL) + ylab(ylabel)
                 + coord_flip())
   
